@@ -1,0 +1,5 @@
+build.wrapper
+build.haxe
+*.elf
+*.nro
+*.nacp
