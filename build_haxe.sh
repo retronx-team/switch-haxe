@@ -1,6 +1,6 @@
 haxe \
     -p haxe_src \
-    -p libs \
+    -p libs/switch-haxe-libnx \
     -D libnx \
     -L ammer \
     -D ammer.lib.nx.headers=switch.h \
