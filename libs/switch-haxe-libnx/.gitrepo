@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/retronx-team/switch-haxe-libnx
+	branch = master
+	commit = a00474e1c211b500092490b5dad4af0d5e4f3127
+	parent = bc98ef6bb8be6198df537a2b214320aacf366e9b
+	method = merge
+	cmdver = 0.4.1
