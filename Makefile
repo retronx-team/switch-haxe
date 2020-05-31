@@ -42,8 +42,12 @@ BUILD		:=	build.wrapper
 SOURCES		:=	wrapper_src
 DATA		:=	data
 INCLUDES	:=	build.haxe/include
-HAXE_LIBMAIN := build.haxe/libMain.a
 #ROMFS	:=	romfs
+
+HAXE_LIBMAIN := build.haxe/libMain.a
+HXCPP := /home/natinusala/Documents/hxcpp
+
+# TODO: find a way to parse HXCPP path from options.txt
 
 #---------------------------------------------------------------------------------
 # options for code generation
@@ -53,7 +57,7 @@ ARCH	:=	-march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE
 CFLAGS	:=	-g -Wall -O2 -ffunction-sections \
 			$(ARCH) $(DEFINES)
 
-CFLAGS	+=	$(INCLUDE) -D__SWITCH__ -I"/home/natinusala/haxelib/hxcpp/4,1,1/include/" # TODO: find a way to parse that from options.txt
+CFLAGS	+=	$(INCLUDE) -D__SWITCH__ -I"$(HXCPP)/include/"
 
 CXXFLAGS	:= $(CFLAGS) -fexceptions
 
