@@ -45,9 +45,7 @@ INCLUDES	:=	build.haxe/include
 #ROMFS	:=	romfs
 
 HAXE_LIBMAIN := build.haxe/libMain.a
-HXCPP := /home/natinusala/Documents/hxcpp
-
-# TODO: find a way to parse HXCPP path from options.txt
+HXCPP := `haxelib path hxcpp | head -n 1`
 
 #---------------------------------------------------------------------------------
 # options for code generation

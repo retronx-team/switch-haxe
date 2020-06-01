@@ -17,12 +17,11 @@ Special thanks to Aurel300 for his guidance on how to use ammer.
 ## How to use
 
 1. Haxe code goes in `haxe_src`
-2. Edit `Makefile` and change the `HXCPP` variable line 48 to point to where your copy of hxcpp is
-3. Run `build_haxe.sh` to compile the Haxe code
+2. Run `build_haxe.sh` to compile the Haxe code
     * Run `clean_haxe.sh` to clean that
-4. Run `make` to link the output of that in an NRO
-5. You need to run BOTH steps (compilation + linking) every time you change the Haxe code
-6. You can change the homebrew name, icon, romfs... by editing the `Makefile` like any other homebrew
+3. Run `make` to link the output of that in an NRO
+4. You need to run BOTH steps (compilation + linking) every time you change the Haxe code
+5. You can change the homebrew name, icon, romfs... by editing the `Makefile` like any other homebrew
 
 ## How does it work
 
